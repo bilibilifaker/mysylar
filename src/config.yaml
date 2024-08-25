@@ -1,0 +1,42 @@
+logs:
+    - name: root
+      level: info
+      formatter: '%d%T%m%n'
+      appenders:
+          - type: FileLogAppender
+            file: log.txt
+          - type: StdoutLogAppender
+    - name: system
+      level: debug
+      formatter: '%d%T%m%n'
+      appenders:
+          - type: FileLogAppender
+            file: root.txt
+          - type: StdoutLogAppender
+
+# system:
+#     port: 9900
+#     value: 15
+#     int_vec:
+#         - 10
+#         - 30
+#     int_list:
+#         - 20
+#         - 40
+#         - 999
+#     int_set: [6,7,8,9,9,10]
+#     int_unordered_set: [8,88,888]
+#     int_map:
+#         k1: 30
+#         k2: 20
+#         k3: 10
+#     int_unordered_map:
+#         q1: 100
+#         q2: 200
+#         q3: 300
+
+# class:
+#     person:
+#         name: zhaojianyu
+#         age: 24
+#         sex: true
